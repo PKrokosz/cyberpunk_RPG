@@ -1,0 +1,6 @@
+[
+  {"type": "prompt", "text": "[USER KROKIET] >> Boot sequence initiated."},
+  {"type": "log", "text": "Loading personal journal entries..."},
+  {"type": "data", "text": "Connection established with Glitchwave terminal."},
+  {"type": "system", "text": "Welcome back, choom."}
+]
