@@ -50,16 +50,16 @@ async function fetchAndInject(url, target) {
 
 // Loader functions for each module:
 async function loadHermesModule(target) {
-  await fetchAndInject('modules/hermes_page.html', target);
+  await fetchAndInject('../modules/hermes_page.html', target);
 }
 async function loadRemorModule(target) {
-  await fetchAndInject('modules/remor_page.html', target);
+  await fetchAndInject('../modules/remor_page.html', target);
 }
 async function loadDonkaModule(target) {
-  await fetchAndInject('modules/donka_feed_shell.html', target);
+  await fetchAndInject('../modules/donka_feed_shell.html', target);
 }
 async function loadLunaModule(target) {
-  await fetchAndInject('modules/v1_luna_legacy/luna.html', target);
+  await fetchAndInject('../modules/v1_luna_legacy/luna.html', target);
 }
 
 // Example usage in journal or main script:
