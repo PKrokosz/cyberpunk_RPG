@@ -6,7 +6,7 @@ import { Modules } from './modules.js';
 const template = document.createElement('template');
 template.innerHTML = `
   <style>
-    @import '../style.css';
+    @import './style.css';
   </style>
   <div class="glitchwave-terminal">
     <header class="terminal-header">//====[ GLITCHWAVE INTERFACE // SubEcho Vault ]====\\</header>
