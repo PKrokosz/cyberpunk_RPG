@@ -2,7 +2,7 @@
 :root {
   --neon-cyan: #00ffcc;        /* Main neon glow color used for text and borders */
   --neon-green: #33ff33;       /* Accent neon color for highlights or active states */
-  --glitch-red: #ff004d;       /* Vibrant red for glitch effects */
+  --glitch-red: #ff0040;       /* Vibrant red for glitch effects */
   --dark-bg: #000;             /* Primary background color for the entire app */
   --dark-panel: #0a0a0a;       /* Background for panels to distinguish from main bg */
   --border-color: var(--neon-cyan); /* Reuse primary neon color for borders */
