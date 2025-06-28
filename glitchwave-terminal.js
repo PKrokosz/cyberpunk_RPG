@@ -1,6 +1,6 @@
 // js/glitchwave-terminal.js
 import { Journal } from './journal.js';
-import { Profile } from './profile.js';
+import { Profile } from './js/profile.js';
 import { Modules } from './modules.js';
 
 const template = document.createElement('template');
