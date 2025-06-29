@@ -31,4 +31,9 @@ h1, h2, h3 {
   .shadow-glow {
     box-shadow: 0 0 8px var(--neon-cyan);
   }
+
+  /* Hover animation for sidebar navigation */
+  .sidebar-link:hover {
+    animation: glitch 1s infinite;
+  }
 }
