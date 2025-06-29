@@ -1,0 +1,9 @@
+{
+  "name": "V",
+  "class": "Netrunner",
+  "stats": {
+    "tech": 8,
+    "stealth": 6,
+    "combat": 5
+  }
+}
