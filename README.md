@@ -17,7 +17,7 @@ npm run build:css
 npm run dev
 ```
 
-To compile the TypeScript sources without bundling, run:
+To type-check the TypeScript sources without emitting compiled files, run:
 
 ```bash
 npm run build:ts
@@ -28,13 +28,14 @@ Vite will serve the app at `http://localhost:5173/`.
 ## Directory overview
 
 - **js/** – JavaScript modules. Key files include:
-  - `glitchwave_terminal.js` – custom element that renders the terminal UI.
+  - `glitchwave-terminal.js` – custom element that renders the terminal UI.
   - `journal.js` – loads a user's journal entries from the `data/` folder using a sanitized filename.
   - `modules.js` – dynamic loader for HTML modules.
   - `profile.js` – displays user profile information.
+- **src/** – React/TypeScript components that implement a richer interface.
 - **modules/** – HTML fragments loaded by the terminal via `modules.js`. Each file represents a page, such as `hermes_page.html` or `remor_page.html`.
 - **data/** – JSON files with journal data.
-- **style.css** and **animations.css** – styling for the interface.
+- **style.css** – base Tailwind styles; **animations.css** – CRT scanline and glitch effects loaded in `index.html`.
 
 The project is intended as a lightweight prototype; feel free to expand the modules or modify the styles to fit your campaign.
 
