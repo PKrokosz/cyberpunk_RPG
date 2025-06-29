@@ -2,7 +2,7 @@
   "name": "cyberpunk-terminal",
   "version": "1.0.0",
   "scripts": {
-    "build:css": "npx tailwindcss -i ./src/input.css -o ./tailwind.build.css --minify",
+    "build:css": "npx tailwindcss -i ./src/index.css -o ./tailwind.build.css --minify",
     "build:ts": "tsc --noEmit",
     "build": "vite build",
     "dev": "vite",
