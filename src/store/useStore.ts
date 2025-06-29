@@ -1,4 +1,4 @@
-import create from 'zustand';
+import { create } from 'zustand';
 import journalData from '../../data/journal_KROKIET.json';
 
 interface Character {
