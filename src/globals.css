@@ -15,18 +15,20 @@ h1, h2, h3 {
   @apply text-neon-cyan;
 }
 
-.text-neon-cyan {
-  color: var(--neon-cyan);
-}
+@layer utilities {
+  .text-neon-cyan {
+    color: var(--neon-cyan);
+  }
 
-.bg-neon-cyan {
-  background-color: var(--neon-cyan);
-}
+  .bg-neon-cyan {
+    background-color: var(--neon-cyan);
+  }
 
-.text-neon-magenta {
-  color: var(--neon-magenta);
-}
+  .text-neon-magenta {
+    color: var(--neon-magenta);
+  }
 
-.shadow-glow {
-  box-shadow: 0 0 8px var(--neon-cyan);
+  .shadow-glow {
+    box-shadow: 0 0 8px var(--neon-cyan);
+  }
 }
