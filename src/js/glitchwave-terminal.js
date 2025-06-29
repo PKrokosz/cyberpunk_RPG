@@ -2,6 +2,7 @@
 import { Journal } from './journal.js';
 import { Profile } from './profile.js';
 import { Modules } from './modules.js';
+import { setupTerminalParser } from './terminalParser.ts';
 
 const template = document.createElement('template');
 template.innerHTML = `
@@ -31,6 +32,7 @@ class GlitchwaveTerminal extends HTMLElement {
     const pane = this.shadowRoot.getElementById('profile-pane');
     await Profile.init(user, pane);
     await Journal.init(user, shell);
+    setupTerminalParser(this.shadowRoot);
   }
 }
 
