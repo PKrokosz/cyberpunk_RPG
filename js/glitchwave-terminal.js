@@ -11,6 +11,9 @@ template.innerHTML = `
   <div class="glitchwave-terminal">
     <header class="terminal-header">//====[ GLITCHWAVE INTERFACE // SubEcho Vault ]====\\</header>
     <div class="terminal-shell" id="terminal-shell"></div>
+    <div class="mt-4 w-full">
+      <input id="command-input" type="text" placeholder="> Type a command" class="w-full bg-black border border-green-600 text-green-400 px-4 py-2 placeholder-green-600 focus:outline-none" />
+    </div>
     <aside class="profile-pane" id="profile-pane"></aside>
     <footer class="terminal-footer">[STATUS] NET-LINK ACTIVE — SLOT: 0x01</footer>
   </div>
