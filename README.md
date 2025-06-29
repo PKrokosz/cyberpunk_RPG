@@ -57,6 +57,14 @@ npm run build:css
 npm run build
 ```
 
+To preview the compiled site locally run:
+
+```bash
+npm start
+```
+
+Vite will serve the production build at `http://localhost:4173/`.
+
 This outputs the compiled site to the `dist/` directory. To deploy on GitHub Pages,
 commit the contents of `dist/` to the `gh-pages` branch of your repository and push it:
 
