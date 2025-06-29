@@ -17,6 +17,12 @@ Start the dev server:
 npm run dev
 ```
 
+To compile the TypeScript sources without bundling, run:
+
+```bash
+npm run build:ts
+```
+
 Vite will serve the app at `http://localhost:5173/`.
 
 ## Directory overview
