@@ -4,9 +4,11 @@ import App from './App';
 import './index.css';
 import { BrowserRouter } from 'react-router-dom';
 
+const base = import.meta.env.BASE_URL;
+
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/cyberpunk_RPG">
       <App />
     </BrowserRouter>
   </React.StrictMode>

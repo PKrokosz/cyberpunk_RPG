@@ -1,3 +1,4 @@
+
 export type CommandHandler = () => string;
 
 const commands: Record<string, CommandHandler> = {
