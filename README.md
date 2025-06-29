@@ -50,10 +50,9 @@ Before building for production, ensure dependencies are installed with:
 npm install
 ```
 
-Then run the build commands:
+Then run the build command:
 
 ```bash
-npm run build:css
 npm run build
 ```
 

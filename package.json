@@ -4,7 +4,7 @@
   "scripts": {
     "build:css": "npx tailwindcss -i ./src/index.css -o ./tailwind.build.css --minify",
     "build:ts": "tsc --noEmit",
-    "build": "vite build",
+    "build": "npm run build:css && vite build",
     "dev": "vite",
     "start": "vite preview"
   },
