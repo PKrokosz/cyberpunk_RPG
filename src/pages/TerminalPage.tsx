@@ -1,23 +1,10 @@
-import React, { useEffect } from 'react';
-
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      'glitchwave-terminal': any;
-    }
-  }
-}
-
-export {};
+import React from 'react';
+import Terminal from '../components/Terminal';
 
 const TerminalPage: React.FC = () => {
-  useEffect(() => {
-    import('../js/glitchwave-terminal.js');
-  }, []);
-
   return (
     <div className="p-6">
-      {React.createElement('glitchwave-terminal', { user: 'KROKIET' })}
+      <Terminal />
     </div>
   );
 };
