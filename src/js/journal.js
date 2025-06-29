@@ -1,4 +1,5 @@
 // js/journal.js
+import { loadJournal } from './loadJournal.js';
 export const Journal = {
   /**
    * Initialize Journal module for given user and container element
@@ -7,14 +8,7 @@ export const Journal = {
    */
   async init(user, container) {
     try {
-      // Sanitize user to prevent path traversal or invalid filenames
-      const sanitized = String(user).replace(/[^a-z0-9]/gi, '');
-      if (!sanitized) throw new Error('Invalid user identifier');
-      // Fetch journal JSON for the sanitized user
-      const response = await fetch(`data/journal_${sanitized}.json`);
-      if (!response.ok) throw new Error('Failed to load journal data');
-      const entries = await response.json();
-      // Render fetched entries into the container
+      const entries = await loadJournal(user);
       this.renderEntries(entries, container);
     } catch (err) {
       container.innerHTML = `<div class="error">[ERROR] ${err.message}</div>`;
