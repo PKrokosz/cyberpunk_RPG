@@ -2,10 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --neon-cyan: #00ffff;
+  --neon-magenta: #ff00ff;
+}
+
 body {
-  @apply bg-black text-white font-sans;
+  @apply bg-black text-green-400 font-mono;
 }
 
 h1, h2, h3 {
   @apply text-neon-cyan;
+}
+
+.text-neon-cyan {
+  color: var(--neon-cyan);
+}
+
+.bg-neon-cyan {
+  background-color: var(--neon-cyan);
+}
+
+.text-neon-magenta {
+  color: var(--neon-magenta);
+}
+
+.shadow-glow {
+  box-shadow: 0 0 8px var(--neon-cyan);
 }

@@ -1,22 +1,25 @@
 import React from 'react';
 import { NavBar } from './components/NavBar';
-import { PlayButton } from './components/PlayButton';
-import { InventoryGrid } from './components/Inventory/InventoryGrid';
-import { CharacterSheet } from './components/CharacterSheet';
-import { Journal } from './components/Journal';
+import TerminalPage from './pages/TerminalPage';
+import JournalPage from './pages/JournalPage';
+import CharacterPage from './pages/CharacterPage';
+import InventoryPage from './pages/InventoryPage';
+import MapPage from './pages/MapPage';
+import { Routes, Route } from 'react-router-dom';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-green-400 font-mono">
       <NavBar />
-      <main className="pt-20 px-8 text-center space-y-12 mb-12">
-        <h1 className="text-4xl font-bold text-neon-cyan">
-          Welcome to Glitchwave Terminal
-        </h1>
-        <PlayButton />
-        <InventoryGrid />
-        <CharacterSheet />
-        <Journal />
+      <main className="pt-20 px-8 space-y-12 mb-12">
+        <Routes>
+          <Route path="/" element={<TerminalPage />} />
+          <Route path="/terminal" element={<TerminalPage />} />
+          <Route path="/journal" element={<JournalPage />} />
+          <Route path="/character" element={<CharacterPage />} />
+          <Route path="/inventory" element={<InventoryPage />} />
+          <Route path="/map" element={<MapPage />} />
+        </Routes>
       </main>
     </div>
   );
