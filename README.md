@@ -4,15 +4,20 @@ A small web-based terminal interface inspired by Cyberpunk aesthetics. The app l
 
 ## Running the project
 
-Open `index.html` in a modern web browser. You can either double‑click the file or serve the folder using a simple HTTP server, for example:
+Install dependencies and build the Tailwind CSS once:
 
 ```bash
-npx serve .
-# or
-python3 -m http.server
+npm install
+npm run build:css
 ```
 
-Then navigate to `http://localhost:8000` (or the address printed by the server) to view the terminal.
+Start the dev server:
+
+```bash
+npm run dev
+```
+
+Vite will serve the app at `http://localhost:5173/`.
 
 ## Directory overview
 
