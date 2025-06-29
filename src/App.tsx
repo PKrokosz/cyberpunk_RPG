@@ -1,22 +1,24 @@
 import React from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
-import { PlayButton } from './components/PlayButton';
-import { InventoryGrid } from './components/Inventory/InventoryGrid';
-import { CharacterSheet } from './components/CharacterSheet';
-import { Journal } from './components/Journal';
+import { TerminalView } from './components/TerminalView';
+import { InventoryGrid } from './components/inventory/InventoryGrid';
+import { CharacterSheet } from './components/character/CharacterSheet';
+import { MapView } from './components/map/MapView';
+import inventory from './data/inventory.json';
 
 const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-black text-white">
       <NavBar />
-      <main className="pt-20 px-8 text-center space-y-12 mb-12">
-        <h1 className="text-4xl font-bold text-neon-cyan">
-          Welcome to Glitchwave Terminal
-        </h1>
-        <PlayButton />
-        <InventoryGrid />
-        <CharacterSheet />
-        <Journal />
+      <main className="pt-20 px-8">
+        <Routes>
+          <Route path="/" element={<Navigate to="/terminal" />} />
+          <Route path="/terminal" element={<TerminalView />} />
+          <Route path="/inventory" element={<InventoryGrid slots={inventory} />} />
+          <Route path="/character" element={<CharacterSheet />} />
+          <Route path="/map" element={<MapView />} />
+        </Routes>
       </main>
     </div>
   );
