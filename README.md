@@ -10,7 +10,7 @@ Install dependencies:
 npm install
 ```
 
-Before starting the dev server, compile the Tailwind CSS:
+Compile the Tailwind CSS, then start the dev server:
 
 ```bash
 npm run build:css
