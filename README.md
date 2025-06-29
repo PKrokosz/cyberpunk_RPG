@@ -37,3 +37,21 @@ Vite will serve the app at `http://localhost:5173/`.
 - **style.css** and **animations.css** – styling for the interface.
 
 The project is intended as a lightweight prototype; feel free to expand the modules or modify the styles to fit your campaign.
+
+## Build and deploy
+
+To build the production bundle run:
+
+```bash
+npm run build:css
+npm run build
+```
+
+This outputs the compiled site to the `dist/` directory. To deploy on GitHub Pages,
+commit the contents of `dist/` to the `gh-pages` branch of your repository and push it:
+
+```bash
+git subtree push --prefix dist origin gh-pages
+```
+
+GitHub will serve the page at `https://<user>.github.io/cyberpunk_RPG/`.
