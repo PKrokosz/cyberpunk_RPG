@@ -1,7 +1,15 @@
 module.exports = {
   content: ["./index.html", "./js/**/*.js", "./src/**/*.{ts,tsx,js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'neon-cyan': '#00ffff',
+        'neon-magenta': '#ff00ff',
+      },
+      boxShadow: {
+        'shadow-glow': '0 0 8px var(--neon-cyan)',
+      },
+    },
   },
   plugins: [],
 };
