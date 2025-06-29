@@ -3,6 +3,7 @@
 // Parser komend użytkownika w stylu retro terminala do świata RPG Glitchwave
 
 export function setupTerminalParser(root: Document | ShadowRoot = document) {
+  const base = import.meta.env.BASE_URL;
   const terminalOutputEl = root.getElementById('terminal-shell') as HTMLElement | null;
   const commandInputEl = root.getElementById('command-input') as HTMLInputElement | null;
 
@@ -68,7 +69,7 @@ export function setupTerminalParser(root: Document | ShadowRoot = document) {
   });
 
   function switchTab(tabId: string) {
-    window.location.href = `/cyberpunk_RPG/${tabId}`;
+    window.location.href = `${base}${tabId}`;
     return `[OK] Przełączono na: ${tabId}`;
   }
 
