@@ -12,7 +12,7 @@ interface JournalEntry {
   text: string;
 }
 
-interface Store {
+export interface Store {
   character: Character;
   inventory: (string | null)[]; // ikony lub identyfikatory przedmiotów
   journal: JournalEntry[];
