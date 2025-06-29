@@ -10,6 +10,10 @@ Install dependencies **before running any build commands**, then compile CSS and
 2. `npm run build:css` – generate `tailwind.build.css`.
 3. `npm run dev` – launch the development server.
 
+Use this command for day-to-day development. After running the production build
+you may preview the compiled site with `npm start`, which internally calls
+`vite preview`.
+
 To type-check the TypeScript sources without emitting compiled files, run:
 
 ```bash
@@ -62,6 +66,7 @@ To preview the compiled site locally run:
 npm start
 ```
 
+This command serves the contents of the `dist/` folder via `vite preview`.
 Vite will serve the production build at `http://localhost:4173/`.
 
 This outputs the compiled site to the `dist/` directory. To deploy on GitHub Pages,
