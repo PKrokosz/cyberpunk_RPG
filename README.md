@@ -4,11 +4,10 @@ A small web-based terminal interface inspired by Cyberpunk aesthetics. The app l
 
 ## Running the project
 
-Install dependencies **before running any build commands**, then compile CSS and start the dev server in this order:
+Install dependencies first and then run a single command that starts both Tailwind and Vite in watch mode:
 
 1. `npm install` – fetch project dependencies.
-2. `npm run build:css` – generate `tailwind.build.css`.
-3. `npm run dev` – launch the development server.
+2. `npm run dev` – compile CSS and launch the development server.
 
 To type-check the TypeScript sources without emitting compiled files, run:
 
