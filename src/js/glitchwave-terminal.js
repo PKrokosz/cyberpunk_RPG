@@ -4,10 +4,11 @@ import { Profile } from './profile.js';
 import { Modules } from './modules.js';
 import { setupTerminalParser } from './terminalParser.ts';
 
+const base = import.meta.env.BASE_URL;
 const template = document.createElement('template');
 template.innerHTML = `
   <style>
-    @import './tailwind.build.css';
+    @import '${base}tailwind.build.css';
   </style>
   <div class="glitchwave-terminal">
     <header class="terminal-header">//====[ GLITCHWAVE INTERFACE // SubEcho Vault ]====\\</header>
