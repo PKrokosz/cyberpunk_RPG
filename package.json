@@ -6,7 +6,7 @@
     "build:ts": "tsc --noEmit",
     "build": "vite build",
     "dev": "vite",
-    "start": "live-server"
+    "start": "vite preview"
   },
   "dependencies": {
     "react": "^19.1.0",
