@@ -4,21 +4,11 @@ A small web-based terminal interface inspired by Cyberpunk aesthetics. The app l
 
 ## Running the project
 
-Install dependencies **before running any build commands**:
+Install dependencies **before running any build commands**, then compile CSS and start the dev server in this order:
 
-```bash
-npm install
-```
-
-Commands such as `npm run build:ts` and `npm run dev` require these 
-dependencies to be present.
-
-Compile the Tailwind CSS, then start the dev server:
-
-```bash
-npm run build:css
-npm run dev
-```
+1. `npm install` – fetch project dependencies.
+2. `npm run build:css` – generate `tailwind.build.css`.
+3. `npm run dev` – launch the development server.
 
 To type-check the TypeScript sources without emitting compiled files, run:
 
@@ -39,8 +29,18 @@ Vite will serve the app at `http://localhost:5173/`.
 - **modules/** – HTML fragments loaded by the terminal via `modules.js`. Each file represents a page, such as `hermes_page.html` or `remor_page.html`.
 - **data/** – JSON files with journal data.
 - **style.css** – base Tailwind styles; **animations.css** – CRT scanline and glitch effects loaded in `index.html`.
+- **legacy/** – older HTML prototypes kept for reference only.
 
 The project is intended as a lightweight prototype; feel free to expand the modules or modify the styles to fit your campaign.
+
+## React routes
+
+The React interface defines four main routes under `src/pages`:
+
+- `/terminal` – renders `TerminalPage` and is also accessible as the root `/`.
+- `/inventory` – shows the player's items via `InventoryGrid`.
+- `/character` – displays stats through `CharacterSheet`.
+- `/map` – placeholder map view for future expansion.
 
 ## Build and deploy
 
