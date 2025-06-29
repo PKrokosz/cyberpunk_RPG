@@ -7,8 +7,11 @@ export const Journal = {
    */
   async init(user, container) {
     try {
-      // Fetch journal JSON for the user
-      const response = await fetch(`data/journal_${user}.json`);
+      // Sanitize user to prevent path traversal or invalid filenames
+      const sanitized = String(user).replace(/[^a-z0-9]/gi, '');
+      if (!sanitized) throw new Error('Invalid user identifier');
+      // Fetch journal JSON for the sanitized user
+      const response = await fetch(`data/journal_${sanitized}.json`);
       if (!response.ok) throw new Error('Failed to load journal data');
       const entries = await response.json();
       // Render fetched entries into the container

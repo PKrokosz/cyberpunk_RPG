@@ -23,7 +23,7 @@ Vite will serve the app at `http://localhost:5173/`.
 
 - **js/** – JavaScript modules. Key files include:
   - `glitchwave_terminal.js` – custom element that renders the terminal UI.
-  - `journal.js` – loads journal entries from the `data/` folder.
+  - `journal.js` – loads a user's journal entries from the `data/` folder using a sanitized filename.
   - `modules.js` – dynamic loader for HTML modules.
   - `profile.js` – displays user profile information.
 - **modules/** – HTML fragments loaded by the terminal via `modules.js`. Each file represents a page, such as `hermes_page.html` or `remor_page.html`.
