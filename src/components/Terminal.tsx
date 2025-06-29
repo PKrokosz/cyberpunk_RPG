@@ -1,13 +1,19 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { parseCommand } from '@/utils/terminalParser';
 
 export default function Terminal() {
   const [history, setHistory] = useState<string[]>([]);
   const [input, setInput] = useState('');
+  const navigate = useNavigate();
 
   const handleInput = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const output = parseCommand(input);
+    if (output.startsWith('[SWITCH]')) {
+      const dest = output.split(' ')[1];
+      navigate(`/${dest}`);
+    }
     setHistory([...history, `> ${input}`, output]);
     setInput('');
   };
