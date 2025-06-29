@@ -4,11 +4,14 @@ A small web-based terminal interface inspired by Cyberpunk aesthetics. The app l
 
 ## Running the project
 
-Install dependencies:
+Install dependencies **before running any build commands**:
 
 ```bash
 npm install
 ```
+
+Commands such as `npm run build:ts` and `npm run dev` require these 
+dependencies to be present.
 
 Compile the Tailwind CSS, then start the dev server:
 
@@ -41,7 +44,13 @@ The project is intended as a lightweight prototype; feel free to expand the modu
 
 ## Build and deploy
 
-To build the production bundle run:
+Before building for production, ensure dependencies are installed with:
+
+```bash
+npm install
+```
+
+Then run the build commands:
 
 ```bash
 npm run build:css
