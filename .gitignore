@@ -33,3 +33,5 @@ coverage/
 .env
 .env.local
 
+# Tailwind build output
+tailwind.build.css
