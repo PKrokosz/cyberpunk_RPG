@@ -4,7 +4,7 @@
   "scripts": {
     "build:css": "npx tailwindcss -i ./src/index.css -o ./tailwind.build.css --minify",
     "build:ts": "tsc --noEmit",
-    "build": "npm run build:css && vite build",
+    "build": "npm run build:css && vite build && cp tailwind.build.css dist/ && cp animations.css dist/ && cp -r data dist/data && cp -r modules dist/modules",
     "dev": "concurrently \"npm run dev:tailwind\" \"npm run dev:vite\"",
     "dev:tailwind": "npx tailwindcss -i ./src/index.css -o ./tailwind.build.css --watch",
     "dev:vite": "vite",
