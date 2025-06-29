@@ -1,6 +1,6 @@
 [
-  {"type": "prompt", "text": "[USER KROKIET] >> Boot sequence initiated."},
-  {"type": "log", "text": "Loading personal journal entries..."},
-  {"type": "data", "text": "Connection established with Glitchwave terminal."},
-  {"type": "system", "text": "Welcome back, choom."}
+  {"date": "2077-04-01", "text": "[USER KROKIET] >> Boot sequence initiated."},
+  {"date": "2077-04-01", "text": "Loading personal journal entries..."},
+  {"date": "2077-04-01", "text": "Connection established with Glitchwave terminal."},
+  {"date": "2077-04-01", "text": "Welcome back, choom."}
 ]
