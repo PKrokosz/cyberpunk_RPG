@@ -8,7 +8,7 @@
     "dev": "concurrently \"npm run dev:tailwind\" \"npm run dev:vite\"",
     "dev:tailwind": "npx tailwindcss -i ./src/index.css -o ./tailwind.build.css --watch",
     "test:e2e": "playwright test",
-    "test:e2e:ci": "PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 PLAYWRIGHT_BROWSERS_PATH=./browsers playwright test"
+    "test:e2e:ci": "PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 PLAYWRIGHT_BROWSERS_PATH=./browsers playwright test",
     "dev:vite": "vite",
     "start": "vite preview",
     "lint": "eslint . --ext .ts,.tsx"
