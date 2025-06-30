@@ -4,14 +4,11 @@
   "scripts": {
     "build:css": "npx tailwindcss -i ./src/index.css -o ./tailwind.build.css --minify",
     "build:ts": "tsc --noEmit",
+    "lint": "eslint . --ext .ts,.tsx",
     "build": "npm run build:css && vite build && cp tailwind.build.css dist/ && cp animations.css dist/ && cp -r data dist/data && cp -r modules dist/modules",
-    "dev": "concurrently \"npm run dev:tailwind\" \"npm run dev:vite\"",
-    "dev:tailwind": "npx tailwindcss -i ./src/index.css -o ./tailwind.build.css --watch",
-    "test:e2e": "playwright test",
-    "test:e2e:ci": "PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 PLAYWRIGHT_BROWSERS_PATH=./browsers playwright test",
-    "dev:vite": "vite",
-    "start": "vite preview",
-    "lint": "eslint . --ext .ts,.tsx"
+    "dev": "vite",
+    "preview": "vite preview",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "react": "^19.1.0",
@@ -20,7 +17,7 @@
     "zustand": "^5.0.6"
   },
   "devDependencies": {
-    "@playwright/test": "^1.42.1",
+    "@playwright/test": "^1.53.2",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@typescript-eslint/eslint-plugin": "^6.15.0",
