@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ProfileShell from '../components/ProfileShell';
 import journalData from '../data/journal.json';
 
 const COMMANDS = [
@@ -40,7 +41,8 @@ const Journal: React.FC<JournalProps> = ({ initialData = journalData }) => {
   const [cmdCount, setCmdCount] = useState(0);
   const [ghostIndex, setGhostIndex] = useState(0);
   const [lastSignature, setLastSignature] = useState('');
-  const config = { signature: { autosign: false } };
+  const [currentUser, setCurrentUser] = useState<string | null>(null);
+  const [autosign, setAutosign] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -89,7 +91,7 @@ const Journal: React.FC<JournalProps> = ({ initialData = journalData }) => {
         if (msg.startsWith('-')) {
           setLastSignature(msg);
         }
-        if (config.signature.autosign && lastSignature && !msg.endsWith(lastSignature)) {
+        if (autosign && lastSignature && !msg.endsWith(lastSignature)) {
           msg += ` ${lastSignature}`;
         }
         setRightLog(prev => [...prev, msg]);
@@ -102,6 +104,11 @@ const Journal: React.FC<JournalProps> = ({ initialData = journalData }) => {
 
   const [history, setHistory] = useState<string[]>([]);
   const [input, setInput] = useState('');
+
+  const handleUserChange = (user: string | null) => {
+    setCurrentUser(user);
+    setAutosign(!!user);
+  };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -120,7 +127,10 @@ const Journal: React.FC<JournalProps> = ({ initialData = journalData }) => {
 
   return (
     <div className="flex flex-col md:flex-row h-full bg-black text-green-400 font-mono">
-      <div className="md:w-1/2 max-w-full border-r border-neon-cyan p-2 overflow-y-auto text-cyan-300">
+      <div className="absolute top-0 left-0 right-0">
+        <ProfileShell onUserChange={handleUserChange} />
+      </div>
+      <div className="md:w-1/2 max-w-full border-r border-neon-cyan p-2 overflow-y-auto text-cyan-300 pt-8">
         {history.map((line, idx) => (
           <div key={idx}>{line}</div>
         ))}
@@ -136,7 +146,7 @@ const Journal: React.FC<JournalProps> = ({ initialData = journalData }) => {
           />
         </form>
       </div>
-      <div className="md:w-1/2 max-w-full p-2">
+      <div className="md:w-1/2 max-w-full p-2 pt-8">
         <div className="flex justify-between items-center border-b border-neon-cyan mb-2">
           <h2 className="text-yellow-300">Journal</h2>
           <span className="text-neon-cyan text-xs font-mono">{COMMANDS.length} COMMANDS AVAILABLE</span>
@@ -146,6 +156,11 @@ const Journal: React.FC<JournalProps> = ({ initialData = journalData }) => {
             {line}
           </div>
         ))}
+        <div className="mt-2 text-xs text-neon-cyan border-t border-neon-cyan pt-1 flex space-x-4">
+          <span>[USER: {currentUser ? currentUser.toUpperCase() : 'NONE'}]</span>
+          <span>[QUESTS: {quests.length}]</span>
+          <span>[SIGNATURE: {autosign ? 'ON' : 'OFF'}]</span>
+        </div>
       </div>
     </div>
   );
