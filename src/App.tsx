@@ -13,6 +13,7 @@ const Game = lazy(() => import('./pages/Game'));
 const Journal = lazy(() => import('./pages/Journal'));
 const Character = lazy(() => import('./pages/Character'));
 const Inventory = lazy(() => import('./pages/Inventory'));
+const BasePage = lazy(() => import('./pages/BasePage'));
 
 const App: React.FC = () => {
   return (
@@ -24,6 +25,7 @@ const App: React.FC = () => {
           <Route path="journal" element={<Journal />} />
           <Route path="character" element={<Character />} />
           <Route path="inventory" element={<Inventory />} />
+          <Route path="base" element={<BasePage />} />
           <Route element={<HUDLayout />}>
             <Route path="terminal" element={<TerminalPage />} />
             <Route path="map" element={<MapPage />} />

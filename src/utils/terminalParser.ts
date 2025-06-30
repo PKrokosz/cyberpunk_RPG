@@ -4,14 +4,15 @@
  * Supported commands: help, journal, map, inv, char, whoami.
  */
 
-export type CommandHandler = () => string;
+export type CommandHandler = (args?: string[]) => string;
 
 export const commands: Record<string, CommandHandler> = {
-  help: () => 'help – journal – map – inv – char – whoami',
+  help: () => 'help – journal – map – inv – char – base – whoami',
   journal: () => '{JOURNAL}',
   map: () => '[SWITCH] map',
   inv: () => '[SWITCH] inv',
   char: () => '[SWITCH] char',
+  base: () => '[SWITCH] base',
   whoami: () => 'USER: KROKIET',
 };
 
@@ -20,7 +21,7 @@ export const commands: Record<string, CommandHandler> = {
  * Unknown commands produce an error string.
  */
 export function parseCommand(input: string): string {
-  const cmd = input.trim().toLowerCase();
-  const handler = commands[cmd];
-  return handler ? handler() : `[ERR] Unknown command: ${cmd}`;
+  const [base, ...args] = input.trim().toLowerCase().split(/\s+/);
+  const handler = commands[base];
+  return handler ? handler(args) : `[ERR] Unknown command: ${base}`;
 }

@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import journalData from '../../data/journal_KROKIET.json';
+import invData from '../data/inventory.json';
 
 interface Character {
   name: string;
@@ -27,7 +28,7 @@ export const useStore = create<Store>((set) => ({
     clazz: 'NetRunner',
     stats: { tech: 8, stealth: 6, combat: 5 }
   },
-  inventory: Array(16).fill(null),
+  inventory: invData.map((i) => i.icon),
   journal: journalData,
   setCharacter: (data) => set({ character: data }),
   setInventory: (items) => set({ inventory: items }),
