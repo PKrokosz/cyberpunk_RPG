@@ -1,0 +1,5 @@
+[
+  { "id": 1, "title": "Recover the Data Shard", "status": "pending", "summary": "A corpo courier was hit…" },
+  { "id": 2, "title": "Meet the Fixer", "status": "done", "summary": "Rabur set up a meet…" },
+  { "id": 3, "title": "Find a Ripperdoc", "status": "failed", "summary": "The clinic was torched…" }
+]
