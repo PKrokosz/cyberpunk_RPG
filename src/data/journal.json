@@ -1,5 +1,44 @@
 [
-  { "id": 1, "title": "Recover the Data Shard", "status": "pending", "summary": "A corpo courier was hit…" },
-  { "id": 2, "title": "Meet the Fixer", "status": "done", "summary": "Rabur set up a meet…" },
-  { "id": 3, "title": "Find a Ripperdoc", "status": "failed", "summary": "The clinic was torched…" }
+  {
+    "id": 1,
+    "title": "V0iD.r3mnant – Echo Pamięci",
+    "status": "in_progress",
+    "summary": "Drużyna wydobyła fragment „echo-pliku” i ustaliła, że blok 404 (Arasaka/SINGULARI) przechowuje rdzenie osobowości. Stich przekazał Blind Key pozwalający otworzyć Sektor 3, ale nośnik ryzykuje nadpisanie tożsamości."
+  },
+  {
+    "id": 2,
+    "title": "Poszukiwania Anaki",
+    "status": "in_progress",
+    "summary": "Anaka – kurierka danych emocjonalnych z EchoVein – może otworzyć Sektor 3. Plan: Donka + Luna nawiązują kontakt w Oblivion Cache, Krokiet + Rabur pełnią wsparcie. Anaka zdradza, że w S-3 uwięziono Kiyosuke i proponuje Projekt SYGNAŁ POKOJU, wymagający żywego nośnika."
+  },
+  {
+    "id": 3,
+    "title": "Infiltracja Synthetica Lounge",
+    "status": "done",
+    "summary": "Mila przeniknęła do klubu i stała się nosicielem wspomnienia pierwszej śmierci Yuriela. Zyskała artefakt „Obce Wspomnienie – Śmierć Yuriela #1”, który może zostać użyty jako broń mentalna."
+  },
+  {
+    "id": 4,
+    "title": "Cień Callara (Pinge → VR-Point L33)",
+    "status": "in_progress",
+    "summary": "Krokiet i Rabur pod przykrywką ochrony badają Callara. W Silosie Q-07 przejmują fragment Echo_K-01 i zostawiają nadajnik GhostEcho dla d_s-h3ll. Krokiet doświadcza cyberpsychozy i pozyskuje odłam KSK-A-∆113."
+  },
+  {
+    "id": 5,
+    "title": "Trzy Nuty w Mieście",
+    "status": "in_progress",
+    "summary": "Callar zleca neutralizację zakodowanych wzorców dźwiękowych (C#-F#-D) mogących ‘zawrócić ludzi z realu’. Zadanie obejmuje polowanie na trzy źródła sygnału w Watson i okolicach."
+  },
+  {
+    "id": 6,
+    "title": "Kapsuła V12 – Jednostka Echo",
+    "status": "done",
+    "summary": "Nieznany Tech-Handler przekazał kapsułę. Po ataku gangów Sidd, Rabur i Krokiet obronili ładunek; Donka wywiozła ekipę do bazy. Kapsuła zawiera uśpioną osobowość Echo (analiza trwa)."
+  },
+  {
+    "id": 7,
+    "title": "Narracyjny Próg Konsolidacji",
+    "status": "in_progress",
+    "summary": "Po przejściu tajemniczych drzwi rzeczywistość zmieniła się w gamifikowany sandbox (Glimmerpoint: Poziom 0). Główny cel: Uwolnić Operatora. Podzadania jeszcze nieujawnione."
+  }
 ]
