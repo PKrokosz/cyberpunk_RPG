@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "x": 1,
+    "y": 1,
+    "name": "SERVER ROOM",
+    "type": "INFRA",
+    "npc": "DONKA",
+    "status": "BUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 2,
+    "x": 2,
+    "y": 1,
+    "name": "LUNA POD",
+    "type": "REST",
+    "npc": "LUNA",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 3,
+    "x": 3,
+    "y": 1,
+    "name": "MILA TEST",
+    "type": "GENERIC",
+    "npc": "MILA",
+    "status": "BUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 4,
+    "x": 4,
+    "y": 1,
+    "name": "ROOM 4",
+    "type": "GENERIC",
+    "npc": "",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 5,
+    "x": 5,
+    "y": 1,
+    "name": "ROOM 5",
+    "type": "GENERIC",
+    "npc": "",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 6,
+    "x": 1,
+    "y": 2,
+    "name": "ROOM 6",
+    "type": "GENERIC",
+    "npc": "",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 7,
+    "x": 2,
+    "y": 2,
+    "name": "ROOM 7",
+    "type": "GENERIC",
+    "npc": "",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 8,
+    "x": 3,
+    "y": 2,
+    "name": "ROOM 8",
+    "type": "GENERIC",
+    "npc": "",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 9,
+    "x": 4,
+    "y": 2,
+    "name": "ROOM 9",
+    "type": "GENERIC",
+    "npc": "",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 10,
+    "x": 5,
+    "y": 2,
+    "name": "ROOM 10",
+    "type": "GENERIC",
+    "npc": "",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 11,
+    "x": 1,
+    "y": 3,
+    "name": "ROOM 11",
+    "type": "GENERIC",
+    "npc": "",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 12,
+    "x": 2,
+    "y": 3,
+    "name": "ROOM 12",
+    "type": "GENERIC",
+    "npc": "",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 13,
+    "x": 3,
+    "y": 3,
+    "name": "ROOM 13",
+    "type": "GENERIC",
+    "npc": "",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 14,
+    "x": 4,
+    "y": 3,
+    "name": "ROOM 14",
+    "type": "GENERIC",
+    "npc": "",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 15,
+    "x": 5,
+    "y": 3,
+    "name": "ROOM 15",
+    "type": "GENERIC",
+    "npc": "",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 16,
+    "x": 1,
+    "y": 4,
+    "name": "ROOM 16",
+    "type": "GENERIC",
+    "npc": "",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 17,
+    "x": 2,
+    "y": 4,
+    "name": "ROOM 17",
+    "type": "GENERIC",
+    "npc": "",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 18,
+    "x": 3,
+    "y": 4,
+    "name": "ROOM 18",
+    "type": "GENERIC",
+    "npc": "",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 19,
+    "x": 4,
+    "y": 4,
+    "name": "ROOM 19",
+    "type": "GENERIC",
+    "npc": "",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 20,
+    "x": 5,
+    "y": 4,
+    "name": "ROOM 20",
+    "type": "GENERIC",
+    "npc": "",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 21,
+    "x": 1,
+    "y": 5,
+    "name": "ROOM 21",
+    "type": "GENERIC",
+    "npc": "",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 22,
+    "x": 2,
+    "y": 5,
+    "name": "ROOM 22",
+    "type": "GENERIC",
+    "npc": "",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 23,
+    "x": 3,
+    "y": 5,
+    "name": "ROOM 23",
+    "type": "GENERIC",
+    "npc": "",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 24,
+    "x": 4,
+    "y": 5,
+    "name": "ROOM 24",
+    "type": "GENERIC",
+    "npc": "",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  },
+  {
+    "id": 25,
+    "x": 5,
+    "y": 5,
+    "name": "ROOM 25",
+    "type": "GENERIC",
+    "npc": "",
+    "status": "UNBUILT",
+    "color": "#00ffff"
+  }
+]
