@@ -1,0 +1,5 @@
+[
+  { "name": "TERMINAL",  "tier":1, "icon":"terminal",  "cost":{ "credits":100,"echo":0,"parts":5 } },
+  { "name": "WORKSHOP",  "tier":1, "icon":"tool",      "cost":{ "credits":80, "echo":2,"parts":10} },
+  { "name": "RIPPER_BAY","tier":2, "icon":"scalpel",   "cost":{ "credits":120,"echo":4,"parts":15} }
+]
