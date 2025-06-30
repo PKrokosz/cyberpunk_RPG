@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const MiniMapPreview = () => {
+const MiniMapPreview: React.FC = () => {
   const navigate = useNavigate();
   return (
     <img
@@ -16,3 +16,4 @@ const MiniMapPreview = () => {
 };
 
 export default MiniMapPreview;
+

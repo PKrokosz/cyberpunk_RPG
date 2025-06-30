@@ -3,8 +3,8 @@ import { useParams } from 'react-router-dom';
 import districts from '@/data/night_city_districts_v3.json';
 import { NightCityContext } from '../context/NightCityContext';
 
-const DistrictView = () => {
-  const { id } = useParams();
+const DistrictView: React.FC = () => {
+  const { id } = useParams<{ id: string }>();
   const { setDistrict } = useContext(NightCityContext);
   const d = districts.find((x) => x.id === id);
 
@@ -12,7 +12,7 @@ const DistrictView = () => {
     if (id) setDistrict(id);
   }, [id, setDistrict]);
 
-  const startEncounter = (poi) => {
+  const startEncounter = (poi: string) => {
     console.log('start encounter', poi);
   };
 
@@ -40,3 +40,4 @@ const DistrictView = () => {
 };
 
 export default DistrictView;
+
