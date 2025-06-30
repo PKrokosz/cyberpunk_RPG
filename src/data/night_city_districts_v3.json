@@ -1,0 +1,26 @@
+[
+  {
+    "id": "watson",
+    "name": "Watson",
+    "faction_control": "Tyger Claws",
+    "risk_level": "low",
+    "position": { "x": 0.25, "y": 0.35 },
+    "poi": ["ripperdoc", "market"]
+  },
+  {
+    "id": "westbrook",
+    "name": "Westbrook",
+    "faction_control": "Tyger Claws",
+    "risk_level": "medium",
+    "position": { "x": 0.45, "y": 0.2 },
+    "poi": ["club", "bazaar"]
+  },
+  {
+    "id": "pacifica",
+    "name": "Pacifica",
+    "faction_control": "Voodoo Boys",
+    "risk_level": "high",
+    "position": { "x": 0.6, "y": 0.75 },
+    "poi": ["beach", "mall"]
+  }
+]

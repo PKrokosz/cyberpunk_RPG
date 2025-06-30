@@ -6,7 +6,8 @@ const TerminalPage = lazy(() => import('./pages/TerminalPage'));
 const JournalPage = lazy(() => import('./pages/JournalPage'));
 const CharacterPage = lazy(() => import('./pages/CharacterPage'));
 const InventoryPage = lazy(() => import('./pages/InventoryPage'));
-const MapPage = lazy(() => import('./pages/MapPage'));
+const NightCityMap = lazy(() => import('./components/NightCityMap'));
+const DistrictView = lazy(() => import('./pages/DistrictView'));
 const SystemPage = lazy(() => import('./pages/SystemPage'));
 const LandingPage = lazy(() => import('./pages/LandingPage'));
 const Game = lazy(() => import('./pages/Game'));
@@ -28,7 +29,8 @@ const App: React.FC = () => {
           <Route path="base" element={<BasePage />} />
           <Route element={<HUDLayout />}>
             <Route path="terminal" element={<TerminalPage />} />
-            <Route path="map" element={<MapPage />} />
+            <Route path="map" element={<NightCityMap />} />
+            <Route path="map/:id" element={<DistrictView />} />
             <Route path="system" element={<SystemPage />} />
             <Route path="journal-old" element={<JournalPage />} />
             <Route path="character-old" element={<CharacterPage />} />

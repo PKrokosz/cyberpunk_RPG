@@ -41,4 +41,13 @@ h1, h2, h3 {
   .sidebar-link:hover {
     animation: glitch 1s infinite;
   }
+
+  .btn-glow {
+    @apply bg-neon-cyan text-black font-bold py-2 px-4 rounded shadow-glow transition hover:shadow-lg;
+  }
+
+  .hotspot {
+    width: 1.5%;
+    height: 1.5%;
+  }
 }
