@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import MiniMapPreview from '../components/MiniMapPreview';
 
-const LandingPage = () => (
+const LandingPage: React.FC = () => (
   <div className="min-h-screen bg-black text-green-400 font-mono flex items-center justify-center">
     <div className="border-4 border-neon-magenta rounded-2xl p-8 w-96 text-center shadow-glow">
       <h1 className="text-xl mb-6 neon-glow">// WELCOME TO G.L.I.T.C.H.W.A.V.E //</h1>
@@ -22,3 +22,4 @@ const LandingPage = () => (
 );
 
 export default LandingPage;
+
